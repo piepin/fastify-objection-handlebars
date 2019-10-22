@@ -13,7 +13,7 @@ Library-library di atas saya gunakan karena tergolong populer dan banyak direkom
 
 ### Database
 
-Pada contoh ini saya menggunakan database MySQL, namun dapat diubah ke database lain dengan mengubah parameter pada Objection.
+Pada contoh ini saya menggunakan database MySQL, namun dapat diubah menggunakan database lain dengan mengubah parameter pada Objection. Lihat contoh menggunakan SQLite3 dan PostgreSQL pada file `connection.js`.
 
 ### Struktur Database
 
@@ -69,7 +69,7 @@ Setelah repo ini diclone, maka akan didapatkan struktur folder seperti ini:
             ├── head.hbs
             └── nav.hbs
 
-Ini merupakan contoh struktur folder yang bisa kita kembangkal lagi. Tetapi minimal di dalamnya ada folder `controllers`, `views`, `models`.             
+Ini merupakan contoh struktur folder yang bisa kita kembangka lagi. Tetapi minimal di dalamnya ada folder `controllers`, `views`, `models`.             
 
 ### Menjalankan Server
 
