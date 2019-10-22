@@ -13,10 +13,10 @@ function ok(values, message, reply) {
 
 function notFound(values, message, reply) {
     return reply
-        .code(200)
+        .code(404)
         .header('Content-Type', 'application/json; charset=utf-8')
         .send({
-            code: 400,
+            code: 404,
             values: values,
             message: message,
         });

@@ -9,7 +9,7 @@ async function gethtml(request, reply) {
         .eager('phone')
         .orderBy('name', 'ASC');
 
-    reply.view('main', {
+    return reply.view('main', {
         body: JSON.stringify(users)
     })
 }
@@ -45,7 +45,11 @@ async function show(request, reply) {
         .eager('phone')
         .findById(id);
 
-    return res.ok(users, "", reply)
+    if (users) {
+        return res.ok(users, "", reply)
+    } else {
+        return res.notFound(users, "User not found", reply)
+    }
 }
 
 async function update(request, reply) {
