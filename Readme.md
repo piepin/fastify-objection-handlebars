@@ -1,4 +1,5 @@
-# Contoh Penggunaan Fastify, Objection, Handlebars dan MySQL
+# Contoh Aplikasi NodeJS Sederhana  
+## Menggunakan library: Fastify, Objection, Handlebars dan MySQL
 
 Ini adalah sebuah contoh aplikasi sederhana dengan NodeJS menggunakan library:
 
@@ -7,13 +8,13 @@ Ini adalah sebuah contoh aplikasi sederhana dengan NodeJS menggunakan library:
 * Handlebars - Template engine
 * MySQL - Database MySQL
 
-Tujuan proyek ini untuk belajar membuat aplikasi NodeJS dengan lebih terstruktur.
+Tujuan proyek ini untuk belajar membuat aplikasi NodeJS dengan terstruktur (metode MVC).
 
-Library-library di atas saya gunakan karena tergolong populer dan banyak direkomendasikan. Selain itu penggunaan nya relatif mudah dan sederhana. 
+Library-library di atas saya gunakan karena cukup populer dan banyak direkomendasikan. Selain itu penggunaan nya relatif mudah dan sederhana. 
 
 ### Database
 
-Pada contoh ini saya menggunakan database MySQL, namun dapat diubah menggunakan database lain dengan mengubah parameter pada Objection. Lihat contoh menggunakan SQLite3 dan PostgreSQL pada file `connection.js`.
+Pada contoh ini saya menggunakan database MySQL, tetapi dapat diubah menggunakan database lain dengan mengubah parameter pada Objection. Lihat contoh menggunakan SQLite3 dan PostgreSQL pada file `connection.js`.
 
 ### Struktur Database
 
@@ -60,6 +61,11 @@ Setelah repo ini diclone, maka akan didapatkan struktur folder seperti ini:
     │   ├── PhoneModel.js
     │   └── UserModel.js
     ├── package.json
+    ├── public
+    │   ├── css
+    │   │   └── style.css
+    │   ├── img
+    │   └── js
     ├── Readme.md
     ├── routes.js
     ├── server.js
@@ -69,7 +75,8 @@ Setelah repo ini diclone, maka akan didapatkan struktur folder seperti ini:
             ├── head.hbs
             └── nav.hbs
 
-Ini merupakan contoh struktur folder yang bisa kita kembangka lagi. Tetapi minimal di dalamnya ada folder `controllers`, `views`, `models`.             
+
+Ini merupakan contoh struktur folder yang bisa kita kembangkan lagi. Tetapi minimal di dalamnya ada folder `controllers`, `views`, `models`, `public`.             
 
 ### Menjalankan Server
 
@@ -88,7 +95,7 @@ Mencoba template engine, buka di browser:
     
 ### Todo
 
-* Folder static / public
+* <s>Folder static / public</s>
 * Integrasi Bootstrap
 * Authentication 
 
