@@ -30,15 +30,14 @@ fastify.register(require('./routes'), {
     prefix: '/v1'
 });
 
-fastify.listen(process.env.PORT || 3100);
-
-/* const server = async() => {
+const server = async() => {
     try {
         await fastify.listen(process.env.PORT || 3100);
         console.log(`Server listening on ${fastify.server.address().port}`);
     } catch (err) {
         console.log(err);
         process.exit(1);
-        server();
     }
-} */
+}
+
+server();
