@@ -2,6 +2,10 @@
     font-family: arial, sans-serif;
 }
 
+body {
+    margin: 2rem;
+}
+
 .content {
     margin-top: 1rem;
     font-family: monospace;

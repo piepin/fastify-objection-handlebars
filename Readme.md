@@ -92,6 +92,10 @@ Mencoba membaca data dalam format JSON. Sebelumnya jangan lupa untuk mengisi tab
 Mencoba template engine, buka di browser:    
     
     http://127.0.0.1:3100/v1/users/html 
+
+Tampilannya kira-kira seperti ini:
+
+![](https://img.vim-cn.com/bb/fb9ae9b55b5a0ea9ef151dc0e582eeafff4117.png)
     
 ### Todo
 
