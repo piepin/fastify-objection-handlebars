@@ -9,9 +9,8 @@ async function gethtml(request, reply) {
         .eager('phone')
         .orderBy('name', 'ASC');
 
-    //return res.ok(users, "", reply)
     reply.view('main', {
-        body: "Gelo"
+        body: JSON.stringify(users)
     })
 }
 

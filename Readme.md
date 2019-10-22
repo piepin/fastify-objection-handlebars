@@ -37,10 +37,28 @@ Silahkan buat dulu tabel pada database, dengan struktur sbb:
         ON DELETE NO ACTION
         ON UPDATE NO ACTION);
 
+
+### Menginstal Aplikasi
+
+    git clone https://github.com/piepin/fastify-objection-handlebars.git
+    cd fastify-objection-handlebars
+    npm install
+
 ### Menjalankan Server
 
-    npm install
     node server.js
+
+### Mengakses dari Client
+
+Mencoba membaca data dalam format JSON. Sebelumnya jangan lupa untuk mengisi tabel users dan phone dengan sembarang data.
+
+    curl http://127.0.0.1:3100/v1/users  
+    curl http://127.0.0.1:3100/v1/users/1
+
+Mencoba template engine, buka di browser:    
+    
+    http://127.0.0.1:3100/v1/users/html 
+
 
 
 
