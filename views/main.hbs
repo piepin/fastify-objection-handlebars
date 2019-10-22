@@ -3,10 +3,14 @@
 {{>head}}
 
 <body>
+    <nav>
     {{>nav}}
-    <content>
-        {{{body}}}
-    </content>
+    </nav>
+    <div id='json' class='content'>
+    </div>
 </body>
 
+<script>
+    document.getElementById("json").innerHTML = JSON.stringify({{{body}}}, undefined, 2);
+</script>
 </html>

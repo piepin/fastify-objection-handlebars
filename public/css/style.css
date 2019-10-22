@@ -1,0 +1,17 @@
+* {
+    font-family: arial, sans-serif;
+}
+
+.content {
+    margin-top: 1rem;
+    font-family: monospace;
+    border: 1px solid #ccc;
+    background-color: #eee;
+    padding: 1rem;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+    text-align: left;
+}

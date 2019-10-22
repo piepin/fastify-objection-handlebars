@@ -5,6 +5,11 @@ const fastify = require('fastify')({
     logger: false
 });
 
+fastify.register(require('fastify-static'), {
+    root: join(__dirname, 'public'),
+    prefix: '/assets/',
+})
+
 fastify.register(require('point-of-view'), {
     engine: {
         handlebars: require('handlebars'),
@@ -25,13 +30,15 @@ fastify.register(require('./routes'), {
     prefix: '/v1'
 });
 
-const start = async() => {
+fastify.listen(process.env.PORT || 3100);
+
+/* const server = async() => {
     try {
         await fastify.listen(process.env.PORT || 3100);
         console.log(`Server listening on ${fastify.server.address().port}`);
     } catch (err) {
         console.log(err);
         process.exit(1);
+        server();
     }
-}
-start();
+} */
