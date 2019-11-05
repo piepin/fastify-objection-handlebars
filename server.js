@@ -30,6 +30,8 @@ fastify.register(require('./routes'), {
     prefix: '/v1'
 });
 
+fastify.register(require('fastify-cors'), null)
+
 const server = async() => {
     try {
         await fastify.listen(process.env.PORT || 3100);
